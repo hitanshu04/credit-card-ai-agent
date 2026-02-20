@@ -7,6 +7,8 @@
 
 ---
 
+<img width="1840" height="843" alt="Screenshot 2026-02-21 032746" src="https://github.com/user-attachments/assets/a96d8c99-6b2b-468f-b7bb-e297bb93e054" />
+
 ## 🚀 Overview
 This agent bypasses LLM hallucinations by using a **Deterministic ROI Engine**. It maps personal transaction data against a verified relational database of T&Cs across 5 major bank providers (HDFC, SBI, ICICI, Axis, Kotak).
 
