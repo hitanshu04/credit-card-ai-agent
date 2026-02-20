@@ -1,32 +1,51 @@
-💳 AI Credit Card Optimizer
-A Mathematically Verified Financial Intelligence Agent
+# 💳 AI Credit Card Optimizer
+> **A Mathematically Verified Decision Engine for Strategic Financial Routing**
 
+![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
-🚀 Overview
-This project is a production-grade AI agent designed to optimize personal financial routing across 5 major bank providers (HDFC, SBI, ICICI, Axis, Kotak). It analyzes personal transaction statements and recommends the mathematically optimal card for maximum ROI.
+---
 
+## 🚀 Overview
+This agent bypasses LLM hallucinations by using a **Deterministic ROI Engine**. It maps personal transaction data against a verified relational database of T&Cs across 5 major bank providers (HDFC, SBI, ICICI, Axis, Kotak).
 
-🛠️ Architecture
-The system follows a Decoupled 3-Tier Architecture:
+---
 
-Data Layer: Relational SQLite database storing verified credit card T&Cs (multipliers, fees, perks).
+## ⚙️ System Architecture
+The framework follows a **Decoupled 3-Tier Architecture**, ensuring modularity and data integrity.
 
-Logic Layer (NLP Heuristics): An intent-routing engine that maps user queries to deterministic mathematical models.
+| Layer | Responsibility | Technology |
+| :--- | :--- | :--- |
+| **Data Layer** | Relational Knowledge Graph of Card T&Cs | SQLite |
+| **Logic Layer** | NLP Heuristics & Deterministic ROI Math | Python (Regex/JSON) |
+| **UI Layer** | Reactive Financial Dashboard | Streamlit |
 
-UI Layer: A reactive Streamlit dashboard for real-time spend auditing.
+---
 
+## ⚖️ The Mathematical Core
+To ensure reliability over "half-baked" predictions, every recommendation is derived using a unified ROI formula:
 
-⚖️ Mathematical Model
-To ensure Quality over Hallucination, every recommendation is derived using a deterministic ROI formula:
+$$ROI = \left( \frac{\text{Multiplier}}{\text{Spend Unit}} \right) \times \text{Point Value} \times 100$$
 
+> **Note on Mathematical Integrity**: The system currently prioritizes **Verified Baseline Returns (1-2%)**. This is a strategic design choice to maintain data integrity across the framework and avoid the risk of unverified multiplier stacking for specific merchants.
 
+---
 
-Note: For this iteration, the system prioritizes Conservative Baseline Returns (1-2%) to ensure data integrity across the framework, avoiding the risks of unverified multiplier stacking.
+## ✨ Key Features
+* **📊 Personal Spend Audit**: Scans Excel-based transaction history and identifies exact missed savings.
+* **🎯 Smart Intent Routing**: Handles natural language queries for **Lounge Access**, **Golf Privileges**, **Tie-ups (Taj)**, and **Milestones**.
+* **⚖️ Fee Waiver Benchmarking**: Specifically filters cards based on `waiver_spend_limit` rather than just initial joining fees.
 
+---
 
-✨ Key Features
-Personal Spend Audit: Automatically highlights missed savings from Excel transaction statements.
-
-Comprehensive Benchmarking: Covers all 5 bank providers across sub-points like Lounge access, Golf privileges, Special Tie-ups (Taj), and Reward Expiry.
-
-Sorted Optimization Table: Displays top savings opportunities in a clean, high-to-low sorted interface.
+## 🛠️ Installation & Setup
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/hitanshu04/credit-card-ai-agent.git
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+3. **Run the Application**:
+   ```bash
+   streamlit run app.py
